@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Waste-to-Wealth Initiative: My Entrepreneurial Journey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1.5rem;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e3a8a; /* Darker blue */
+            margin-bottom: 2rem;
+            text-align: center;
+            border-bottom: 4px solid #3b82f6; /* Blue border */
+            padding-bottom: 0.5rem;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .sub-section-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #2563eb; /* Medium blue */
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3b82f6;
+            padding-left: 0.75rem;
+        }
+        .list-item {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .list-item::before {
+            content: '•';
+            color: #3b82f6;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+        }
+        /* Styling for the loading spinner */
+        .loader {
+            border: 4px solid #f3f3f3; /* Light grey */
+            border-top: 4px solid #3b82f6; /* Blue */
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 2s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 0.5rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-800 p-4 sticky top-0 z-50 shadow-lg rounded-b-xl">
+        <div class="container flex justify-between items-center">
+            <a href="#home" class="text-white text-2xl font-bold rounded-md hover:bg-blue-700 px-3 py-2 transition duration-300">Waste-to-Wealth</a>
+            <div class="space-x-4">
+                <a href="#journey" class="text-white hover:text-blue-200 text-lg transition duration-300 rounded-md hover:bg-blue-700 px-3 py-2">Journey</a>
+                <a href="#solution" class="text-white hover:text-blue-200 text-lg transition duration-300 rounded-md hover:bg-blue-700 px-3 py-2">Solution</a>
+                <a href="#prototype" class="text-white hover:text-blue-200 text-lg transition duration-300 rounded-md hover:bg-blue-700 px-3 py-2">Prototype</a>
+                <a href="#reflection" class="text-white hover:text-blue-200 text-lg transition duration-300 rounded-md hover:bg-blue-700 px-3 py-2">Reflection</a>
+                <a href="#conclusion" class="text-white hover:text-blue-200 text-lg transition duration-300 rounded-md hover:bg-blue-700 px-3 py-2">Conclusion</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Homepage Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-blue-700 to-blue-500 text-white text-center rounded-b-3xl shadow-xl">
+        <div class="container">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">The Waste-to-Wealth Initiative</h1>
+            <p class="text-xl md:text-2xl font-light mb-8 animate-fade-in-up">Transforming Africa's Waste Challenges into Sustainable Opportunities</p>
+            <p class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+                Welcome to my entrepreneurial journey! This website documents my dedicated efforts
+                to address critical challenges in climate change and improper waste disposal,
+                particularly focusing on the vibrant urban areas of Accra, Ghana, and beyond.
+                Join me as I explore innovative solutions for a cleaner, healthier, and more prosperous Africa.
+            </p>
+            <!-- New Image for Homepage -->
+            <div class="mt-8 flex justify-center">
+                <img src="https://placehold.co/800x400/3b82f6/ffffff?text=Sustainable+Africa+Vision"
+                     alt="Vision for a sustainable Africa"
+                     class="max-w-full h-auto rounded-lg shadow-lg">
+            </div>
+            <p class="text-sm mt-2">A vision for a cleaner, healthier, and more prosperous Africa.</p>
+        </div>
+    </section>
+
+    <!-- Entrepreneurial Journey Section -->
+    <section id="journey" class="py-16">
+        <div class="container">
+            <h2 class="section-title">My Entrepreneurial Journey</h2>
+
+            <div class="card">
+                <p class="mb-4">
+                    My journey into entrepreneurship has been driven by a profound concern for climate change and its disproportionate impact on African communities.
+                    Witnessing the challenges of waste management firsthand in Accra, Ghana, ignited my resolve to seek sustainable, impactful solutions.
+                    This path has involved deep research, stakeholder engagement, and the iterative development of a viable venture.
+                </p>
+
+                <h3 class="sub-section-title">Problem/Challenge: Improper Waste Disposal in Accra, Ghana</h3>
+                <p id="problemStatement" class="mb-4">
+                    Accra, the capital city of Ghana, faces a significant and pervasive problem of poor waste disposal. This issue is not merely an aesthetic concern but a critical factor contributing to a range of detrimental environmental consequences and serious public health risks for the city's inhabitants.
+                    The problem is exacerbated by rapid urbanization, substantial population growth, and the overwhelming of existing infrastructure and institutional capacities.
+                </p>
+                <!-- New Image for Problem Section -->
+                <div class="mt-6 mb-6 flex justify-center">
+                    <img src="https://placehold.co/700x350/ef4444/ffffff?text=Waste+Challenge+in+Accra"
+                         alt="Depiction of waste challenge in Accra"
+                         class="max-w-full h-auto rounded-lg shadow-md">
+                </div>
+                <p class="text-sm text-gray-600 text-center mb-6">Visualizing the pervasive challenge of improper waste disposal.</p>
+
+                <div class="space-y-4">
+                    <p class="font-semibold text-blue-700">Pain Points & Validated Data:</p>
+                    <ul class="list-disc ml-6 space-y-2">
+                        <li class="list-item">
+                            <span class="font-semibold">Increased Waste Volume:</span> Accra generates approximately 900,000 metric tonnes of solid waste annually (1,500 to 2,800 metric tons per day), posing significant logistical challenges for collection and disposal.
+                        </li>
+                        <li class="list-item">
+                            <span class="font-semibold">Changing Waste Composition:</span> The waste stream is largely organic (65%), but there's a rapid increase in inorganic waste, especially plastics, requiring tailored management strategies.
+                        </li>
+                        <li class="list-item">
+                            <span class="font-semibold">Limited Collection Systems:</span> Waste collection and proper disposal rates remain low, estimated between 33% to 75% of total waste generated, leading to widespread indiscriminate dumping in open drains, streets, and public spaces.
+                        </li>
+                        <li class="list-item">
+                            <span class="font-semibold">Reliance on Landfills:</span> Landfills, often poorly maintained, are the primary disposal method, quickly becoming hazardous sites and contributing to environmental pollution, including methane emissions (a potent greenhouse gas).
+                        </li>
+                        <li class="list-item">
+                            <span class="font-semibold">Environmental Degradation:</span> Unmanaged waste pollutes land and water bodies (e.g., Odaw River, Korle Lagoon), blocking drainage systems and increasing flood risk. Open burning of waste contributes significantly to air pollution and respiratory illnesses.
+                        </li>
+                        <li class="list-item">
+                            <span class="font-semibold">Public Health Impacts:</span> Inadequate sanitation creates ideal conditions for disease vectors, leading to waterborne diseases (cholera, typhoid, dysentery) and vector-borne diseases (malaria, dengue fever). In 2014, Ghana reported over 28,974 cholera cases, with over 98% in Greater Accra.
+                        </li>
+                        <li class="list-item">
+                            <span class="font-semibold">Economic Strain:</span> Financial constraints hinder the Accra Metropolitan Assembly's (AMA) ability to invest adequately in waste management infrastructure despite allocating 20-50% of its municipal budget to the sector.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Root Cause Analysis -->
+            <div class="card">
+                <h3 class="sub-section-title">Root Cause Analysis (5 Whys Technique)</h3>
+                <p class="mb-4">
+                    Our "Five Whys" analysis, starting with the observation that human activities are driving climate change, led to a deeper understanding of the historical and ongoing factors contributing to improper waste disposal and its climate impacts.
+                </p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg shadow-md mb-4">
+                        <thead>
+                            <tr class="bg-blue-100 text-blue-800 uppercase text-sm leading-normal">
+                                <th class="py-3 px-6 text-left rounded-tl-lg">Why #</th>
+                                <th class="py-3 px-6 text-left">Question</th>
+                                <th class="py-3 px-6 text-left rounded-tr-lg">Response</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 text-sm">
+                            <tr class="border-b border-gray-200 hover:bg-gray-100">
+                                <td class="py-3 px-6 text-left whitespace-nowrap font-medium">Why 1</td>
+                                <td class="py-3 px-6 text-left">Why are burning fossil fuels, cutting down forests, and farming livestock increasingly influencing the climate and the Earth's temperature?</td>
+                                <td class="py-3 px-6 text-left">Because these activities release large amounts of greenhouse gases (GHGs) into the atmosphere: carbon dioxide from fossil fuels, reduced CO2 absorption from deforestation, and methane from livestock farming.</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-100">
+                                <td class="py-3 px-6 text-left whitespace-nowrap font-medium">Why 2</td>
+                                <td class="py-3 px-6 text-left">Why do these released gases have such a significant impact on the climate and Earth's temperature?</td>
+                                <td class="py-3 px-6 text-left">Because greenhouse gases trap heat in the Earth's atmosphere, allowing sunlight to enter but preventing outgoing infrared radiation from escaping, leading to a warming effect.</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-100">
+                                <td class="py-3 px-6 text-left whitespace-nowrap font-medium">Why 3</td>
+                                <td class="py-3 px-6 text-left">Why has the scale of these activities (burning fossil fuels, deforestation, livestock farming) increased so dramatically?</td>
+                                <td class="py-3 px-6 text-left">Primarily due to the Industrial Revolution and subsequent global development, leading to increased energy consumption, agricultural expansion to feed growing populations, and widespread deforestation for agriculture and urbanization.</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-100">
+                                <td class="py-3 px-6 text-left whitespace-nowrap font-medium">Why 4</td>
+                                <td class="py-3 px-6 text-left">Why has global development and industrialization relied so heavily on these greenhouse gas-emitting activities?</td>
+                                <td class="py-3 px-6 text-left">Historically, fossil fuels were readily available/energy-dense. Deforestation provided land/resources. Large-scale livestock farming became dominant food production. Environmental consequences weren't fully understood or prioritized early on.</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-100">
+                                <td class="py-3 px-6 text-left whitespace-nowrap font-medium">Why 5</td>
+                                <td class="py-3 px-6 text-left">Why weren't the environmental consequences fully understood or prioritized, and why does this reliance continue in many areas?</td>
+                                <td class="py-3 px-6 text-left">Multifaceted: historical lack of awareness, economic incentives not accounting for environmental costs, established infrastructure around fossil fuels, continued high global energy demand, and complex political/social factors (vested interests, policy inertia, varying public awareness/political will).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- PESTLE Analysis -->
+            <div class="card">
+                <h3 class="sub-section-title">PESTLE Analysis: Context for Climate Change in Africa</h3>
+                <p class="mb-4">
+                    A comprehensive PESTLE (Political, Economic, Social, Technological, Legal, Environmental) analysis provides a holistic view of the factors influencing climate change and waste management in Africa.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-blue-700 mb-2">Political Factors</h4>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                            <li class="list-item">Growing national climate change policies and action plans, varying in enforcement.</li>
+                            <li class="list-item">International collaborations (e.g., UNFCCC) influence national policies.</li>
+                            <li class="list-item">Political stability fosters predictable environment for sustainable investments; instability diverts resources.</li>
+                            <li class="list-item">Decisions on land rights, resource management, and infrastructure investments profoundly affect communities and ecosystems.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-blue-700 mb-2">Economic Factors</h4>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                            <li class="list-item">Inflation and high interest rates increase costs of climate-friendly technologies.</li>
+                            <li class="list-item">Unemployment exacerbates vulnerability to climate shocks.</li>
+                            <li class="list-item">Growing demand for green products/services presents economic opportunities.</li>
+                            <li class="list-item">Climate change poses significant financial risks (damaging infrastructure, agriculture, health crises); adaptation requires substantial investment.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-blue-700 mb-2">Social Factors</h4>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                            <li class="list-item">Rapid population growth and urbanization increase pressure on resources and infrastructure, exacerbating climate vulnerabilities.</li>
+                            <li class="list-item">Traditional ecological knowledge and community-based adaptation are important.</li>
+                            <li class="list-item">Increasing awareness and demand for sustainability, especially among youth, drives behavioral changes.</li>
+                            <li class="list-item">Climate change disproportionately affects marginalized communities (women, children, rural populations), worsening inequalities and leading to displacement.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-blue-700 mb-2">Technological Factors</h4>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                            <li class="list-item">Mobile technology used for climate information dissemination and early warning.</li>
+                            <li class="list-item">Off-grid solar power innovations transform energy access.</li>
+                            <li class="list-item">Climate-smart agriculture techniques and remote sensing for environmental monitoring.</li>
+                            <li class="list-item">New technologies offer solutions for renewable energy, efficient resource management, and climate adaptation; accessibility is key.</li>
+                            <li class="list-item">Africa can lead in developing climate-resilient technologies (drought-resistant crops, water-efficient irrigation, decentralized renewables).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-blue-700 mb-2">Legal Factors</h4>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                            <li class="list-item">Environmental laws exist but enforcement is challenging due to resource constraints.</li>
+                            <li class="list-item">Land tenure and resource rights are critical legal factors for climate vulnerability.</li>
+                            <li class="list-item">Businesses face increasing regulations related to environmental impact.</li>
+                            <li class="list-item">Growing potential for climate-related litigation holding governments/corporations accountable.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-blue-700 mb-2">Environmental Factors</h4>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                            <li class="list-item">Africa experiences severe climate change impacts: increased temperatures, altered rainfall, desertification, biodiversity loss.</li>
+                            <li class="list-item">These impacts threaten water resources, food security, and human health.</li>
+                            <li class="list-item">Land degradation, deforestation, and water scarcity worsen climate change impacts.</li>
+                            <li class="list-item">Improper waste disposal pollutes land/water, harming exposed communities.</li>
+                            <li class="list-item">Africa has immense potential for renewable energy development, sustainable land management, reforestation, and conservation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empathy Map -->
+            <div class="card">
+                <h3 class="sub-section-title">Empathy Map: Understanding Smallholder Farmers in Ghana</h3>
+                <p class="mb-4">
+                    To truly address the problem, it's crucial to understand the people most affected. We empathized with a typical smallholder farmer, Aisha, in Ghana.
+                </p>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li class="list-item">
+                        <span class="font-semibold">Who we are empathizing with:</span> Aisha, a smallholder farmer in Ghana.
+                        <ul class="list-disc ml-6 mt-1 text-gray-700">
+                            <li class="list-item">Situation: Faces unpredictable rainfall, impacting crops and food security; water scarcity; extreme weather threatens livelihood; limited access to resources/information.</li>
+                            <li class="list-item">Role: Food producer, caregiver, land steward, potential adopter of solutions, community voice for climate change experience.</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">What they need to do:</span>
+                        <ul class="list-disc ml-6 mt-1 text-gray-700">
+                            <li class="list-item">Needs: Adapt farming, manage resources, seek information, protect family.</li>
+                            <li class="list-item">Needed to do differently (hindsight): Earlier adoption of sustainable practices, income diversification, stronger community collaboration.</li>
+                            <li class="list-item">Jobs to get done: Secure food, earn income, maintain farm, protect well-being, ensure children's future.</li>
+                            <li class="list-item">Decisions to make: Which new farming techniques, whether to invest in technology, how to manage water, whether to diversify income, how to respond to weather events.</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">What they see:</span>
+                        <ul class="list-disc ml-6 mt-1 text-gray-700">
+                            <li class="list-item">Changing weather, struggling crops, stressed environment, community hardship, limited infrastructure, traditional practices failing.</li>
+                            <li class="list-item">In the marketplace: Fluctuating prices, scarcity, competition, limited opportunities, potential new climate-smart options.</li>
+                            <li class="list-item">In immediate environment: Impacted farm, family well-being affected, changes in local nature, community coping, environmental degradation.</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">What they say:</span>
+                        <ul class="list-disc ml-6 mt-1 text-gray-700">
+                            <li class="list-item">"Rains are different now," "Harvests are smaller," "Need more water," "What about our children's future?" "We need help."</li>
+                            <li class="list-item">Heard say: Frustration about weather, concerns about food, desire for support, challenges with traditional methods, calls for action, sharing coping strategies, stories of hardship, hope and resilience.</li>
+                            <li class="list-item">Imagine say: "I'm scared for the future," "I feel helpless," "Wish someone would listen," "Hope for better farming," "It's not fair," "We will find a way."</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">What they do:</span>
+                        <ul class="list-disc ml-6 mt-1 text-gray-700">
+                            <li class="list-item">Daily: Farm work, household chores, family care, community involvement, market. Today: Religious activities, family time, rest, market, planning for the week.</li>
+                            <li class="list-item">Observed: Farming despite challenges, adapting methods, conserving resources, seeking support, relying on community, coping with losses, going to markets.</li>
+                            <li class="list-item">Imagine doing: Checking weather, discussing farming with neighbors, attending training, repairs, saving seeds, seeking other income, teaching children, praying for better conditions.</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">What they hear:</span>
+                        <ul class="list-disc ml-6 mt-1 text-gray-700">
+                            <li class="list-item">Environment: Family, neighbors, local animals, nearby sounds.</li>
+                            <li class="list-item">Others: Weather concerns, hardship stories, coping advice, complaints about lack of support, market news, religious messages.</li>
+                            <li class="list-item">Friends: Personal struggles, potential opportunities, emotional support, local gossip.</li>
+                            <li class="list-item">Colleagues: Farming challenges, resource sharing, market strategies, program updates.</li>
+                            <li class="list-item">Second-hand: Radio/TV news, community rumors, opinions, misinformation.</li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">What they think and feel (Pains & Gains):</span>
+                        <ul class="list-disc ml-6 mt-1 text-gray-700">
+                            <li class="list-item">Pains: Loss of harvest/income, worry for family, stress of uncertainty, feeling helpless, exhaustion, disappointment, sadness from changing environment.</li>
+                            <li class="list-item">Fears: Famine, losing land, poverty for children, unknown future, lack of support, extreme weather.</li>
+                            <li class="list-item">Frustrations: Unreliable weather, lack of resources/information, unfairness, bureaucratic delays, feeling unheard.</li>
+                            <li class="list-item">Anxiety: Next planting season, children's future, family health/safety, debt, general uncertainty.</li>
+                            <li class="list-item">Motivating Thoughts & Feelings (Gains): Hope for better future, good rains, opportunities. Resilience, love & responsibility, community spirit, pride, desire for knowledge, faith, determination.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-16 bg-blue-50">
+        <div class="container">
+            <h2 class="section-title">Our Solution: The Waste-to-Wealth Initiative</h2>
+
+            <div class="card">
+                <h3 class="sub-section-title">Solution Statement</h3>
+                <p id="solutionStatement" class="mb-4">
+                    Our solution proposes the implementation of integrated, technology-driven waste management systems, including advanced recycling,
+                    waste-to-energy conversion, and anaerobic digestion. The goal is to efficiently divert waste from landfills, recover valuable resources,
+                    and significantly reduce greenhouse gas emissions across African urban and peri-urban areas.
+                </p>
+
+                <!-- LLM Feature: Generate Pitch Statement -->
+                <button id="generatePitchBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out mb-4">
+                    ✨ Generate Pitch Statement
+                </button>
+                <div id="pitchStatementOutput" class="mt-4 p-4 bg-blue-100 border border-blue-200 rounded-lg text-blue-800 hidden">
+                    <p class="font-semibold mb-2">Generated Pitch:</p>
+                    <div id="pitchText" class="text-sm"></div>
+                    <div id="pitchLoading" class="loader mt-2 hidden"></div>
+                </div>
+
+                <h3 class="sub-section-title">How it Works: Organic Waste Valorization Hubs</h3>
+                <p class="mb-4">
+                    We aim to establish decentralized, community-managed Organic Waste Valorization Hubs. These hubs will process segregated organic waste
+                    (food scraps, yard waste) using methods like composting and Black Soldier Fly (BSF) farming.
+                </p>
+                <!-- New Image for Solution Section -->
+                <div class="mt-6 mb-6 flex justify-center">
+                    <img src="https://placehold.co/700x350/22c55e/ffffff?text=Waste+to+Wealth+Process"
+                         alt="Diagram of waste to wealth process"
+                         class="max-w-full h-auto rounded-lg shadow-md">
+                </div>
+                <p class="text-sm text-gray-600 text-center mb-6">Visualizing the process of converting waste into valuable resources.</p>
+
+                <ul class="list-disc ml-6 space-y-2">
+                    <li class="list-item">
+                        <span class="font-semibold">Composting:</span> Organic waste is converted into valuable compost, which can be used as organic fertilizer for agriculture and horticulture, improving soil health and reducing reliance on chemical fertilizers.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Black Soldier Fly (BSF) Farming:</span> Organic waste is fed to BSF larvae, which efficiently convert it into high-protein animal feed and nutrient-rich frass (fertilizer). This provides a sustainable protein source and reduces organic waste volume.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Waste-to-Energy (Future Expansion):</span> Explore the potential for integrating anaerobic digestion to produce biogas for electricity generation or heating, further reducing landfill waste and generating renewable energy.
+                    </li>
+                </ul>
+
+                <h3 class="sub-section-title">Unique Selling Proposition</h3>
+                <p class="mb-4 font-semibold text-blue-700">
+                    Empowering African communities to transform their waste into wealth, creating local green jobs, improving public health and sanitation,
+                    and directly combating climate change by significantly reducing methane emissions and enhancing agricultural productivity through
+                    sustainable resource recovery.
+                </p>
+
+                <h3 class="sub-section-title">Key Features & Benefits</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Features:</h4>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                            <li class="list-item">Decentralized Organic Waste Processing Hubs.</li>
+                            <li class="list-item">Community-managed waste segregation & collection.</li>
+                            <li class="list-item">Composting and BSF farming technologies.</li>
+                            <li class="list-item">Local job creation and training programs.</li>
+                            <li class="list-item">Production of organic fertilizer and animal feed.</li>
+                            <li class="list-item">Potential for carbon credit generation.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Benefits:</h4>
+                        <ul class="list-disc ml-6 space-y-1 text-gray-700">
+                            <li class="list-item">Significant reduction in landfill waste.</li>
+                            <li class="list-item">Reduced methane emissions, combating climate change.</li>
+                            <li class="list-item">Improved public health and sanitation in communities.</li>
+                            <li class="list-item">Creation of sustainable green jobs (especially for youth and women).</li>
+                            <li class="list-item">Enhanced agricultural productivity through organic fertilizers.</li>
+                            <li class="list-item">New revenue streams from valorized products and carbon credits.</li>
+                            <li class="list-item">Increased community ownership and participation in waste management.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="sub-section-title">Implementation Plans</h3>
+                <p class="mb-4">
+                    Our implementation strategy focuses on a phased approach, starting with pilot projects and expanding through community engagement and strategic partnerships.
+                </p>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li class="list-item">
+                        <span class="font-semibold">Phase 1: Pilot Hub Setup</span> - Establish initial hubs in strategic communities in Accra, focusing on organic waste collection and processing via composting and BSF farming.
+                        Train local community members as operators and waste segregators.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Phase 2: Community Sensitization & Training</span> - Conduct workshops on waste segregation benefits and hub operations. Implement small incentive programs for consistent waste segregation.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Phase 3: Market Linkages</span> - Establish partnerships with local farmers and agricultural businesses for the sale of compost and BSF feed. Explore digital outreach (community radio, social media) for awareness.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Phase 4: Scaling & Partnerships</span> - Replicate successful hub models in more communities. Formalize long-term agreements with local authorities, environmental NGOs, and agricultural cooperatives. Explore carbon credit generation.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototype Section -->
+    <section id="prototype" class="py-16">
+        <div class="container">
+            <h2 class="section-title">Our Prototype: The Waste-to-Wealth Model</h2>
+
+            <div class="card">
+                <p class="mb-4">
+                    Our initial prototype focuses on the conceptual framework and a low-fidelity representation of the Organic Waste Valorization Hubs,
+                    as depicted in our Lean Canvas. This visual outlines the core components and their interactions.
+                </p>
+                <h3 class="sub-section-title">Initial Drawing/Diagram: Lean Canvas Overview</h3>
+                <div class="flex justify-center items-center p-4 bg-gray-50 rounded-lg shadow-inner mb-6">
+                    <img src="Business Model Canvas Planning Whiteboard in Navy Yellow Purple Simple Colourful Style.jpg-62dc0c7e-078a-420d-9829-4d7c8840e7ce"
+                         alt="Business Model Canvas outlining Waste-to-Wealth initiative"
+                         class="max-w-full h-auto rounded-lg shadow-md"
+                         onerror="this.onerror=null;this.src='https://placehold.co/800x600/b0b0b0/ffffff?text=Lean+Canvas+Image';">
+                </div>
+                <p class="text-sm text-gray-600 text-center mb-6">
+                    (Above: A visual representation of our Lean Canvas, outlining key components of the Waste-to-Wealth initiative)
+                </p>
+
+                <h3 class="sub-section-title">Key Metrics from Prototype Planning</h3>
+                <ul class="list-disc ml-6 space-y-2 mb-4">
+                    <li class="list-item">Tons of organic waste diverted from landfills/dumps per month.</li>
+                    <li class="list-item">Tons of organic compost produced per month.</li>
+                    <li class="list-item">Tons of BSF larvae/meal produced per month.</li>
+                    <li class="list-item">Number of households actively participating in waste segregation.</li>
+                    <li class="list-item">Estimated CH4 emissions reduced (in CO2 equivalent).</li>
+                    <li class="list-item">Number of local jobs created (especially for youth and women).</li>
+                    <li class="list-item">Revenue generated from product sales.</li>
+                </ul>
+
+                <h3 class="sub-section-title">Milestones and Adaptations</h3>
+                <p class="mb-4">
+                    Our prototyping journey has involved several iterations, refining our approach based on initial research and feedback.
+                </p>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li class="list-item">
+                        <span class="font-semibold">Initial Focus:</span> Started with a broad focus on climate change, then narrowed to waste management in Accra due to its direct impact and potential for tangible solutions.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Problem Validation:</span> Utilized "Week 6 Report" data to validate pain points of improper waste disposal and its health/environmental impacts.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Solution Refinement:</span> Moved from general waste solutions to specific organic waste valorization (composting, BSF farming) based on waste composition data and proven African case studies.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Stakeholder-Centric Design:</span> Incorporated insights from Empathy Mapping (e.g., smallholder farmers' needs for adaptive resources) and PESTLE analysis (e.g., policy, economic factors) into solution design.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Lean Canvas Development:</span> Developed a lean canvas to articulate the business model, refining value propositions, customer segments, and revenue streams.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section id="reflection" class="py-16 bg-blue-50">
+        <div class="container">
+            <h2 class="section-title">Reflection on My Journey</h2>
+
+            <div class="card">
+                <h3 id="challengesEncounteredTitle" class="sub-section-title">Challenges Encountered</h3>
+                <ul id="challengesEncounteredList" class="list-disc ml-6 space-y-2">
+                    <li class="list-item">
+                        <span class="font-semibold">Data Accessibility:</span> While some reports were available, granular, real-time data on waste generation and composition in specific Accra neighborhoods was challenging to acquire without direct fieldwork.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Scope Management:</span> Initial tendency to address the vastness of "climate change in Africa" required significant effort to narrow down to a manageable, actionable problem (waste management in Accra) while retaining broader impact potential.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Balancing Idealism and Practicality:</span> Striking a balance between ambitious, transformative solutions and practical, implementable steps given local constraints (e.g., infrastructure, financial limitations).
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Interdisciplinary Integration:</span> Synthesizing insights from diverse fields (environmental science, economics, sociology, policy) into a coherent venture strategy.
+                    </li>
+                </ul>
+
+                <h3 id="lessonsLearnedTitle" class="sub-section-title">Lessons Learned</h3>
+                <ul id="lessonsLearnedList" class="list-disc ml-6 space-y-2">
+                    <li class="list-item">
+                        <span class="font-semibold">Importance of Problem Validation:</span> Thoroughly validating the problem with data and understanding its root causes (e.g., through 5 Whys) is fundamental before jumping to solutions.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Human-Centered Design:</span> Empathy mapping revealed crucial nuances of affected communities' perspectives, highlighting the need for solutions that resonate with their daily realities and needs.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Holistic Contextual Analysis:</span> PESTLE analysis demonstrated the interconnectedness of various external factors (political, economic, social, technological, legal, environmental) that can significantly impact a venture's success. Ignoring these leads to critical blind spots.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Iterative Approach:</span> Entrepreneurship is an iterative process. Initial ideas are rarely perfect and require continuous refinement based on feedback and new insights, as reflected in the prototype development.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Value of Collaboration:</span> Addressing complex challenges like waste management requires multi-stakeholder collaboration – involving government, private sector, and communities – which is central to our solution's feasibility.
+                    </li>
+                </ul>
+
+                <!-- New Image for Reflection Section -->
+                <div class="mt-6 mb-6 flex justify-center">
+                    <img src="https://placehold.co/600x300/a78bfa/ffffff?text=Learning+and+Growth"
+                         alt="Image representing learning and growth"
+                         class="max-w-full h-auto rounded-lg shadow-md">
+                </div>
+                <p class="text-sm text-gray-600 text-center mb-6">Reflecting on challenges as opportunities for learning and growth.</p>
+
+                <!-- LLM Feature: Suggest Further Learning Steps -->
+                <button id="suggestLearningBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out mb-4">
+                    ✨ Suggest Further Insights
+                </button>
+                <div id="learningSuggestionsOutput" class="mt-4 p-4 bg-blue-100 border border-blue-200 rounded-lg text-blue-800 hidden">
+                    <p class="font-semibold mb-2">Suggested Next Steps:</p>
+                    <div id="learningText" class="text-sm"></div>
+                    <div id="learningLoading" class="loader mt-2 hidden"></div>
+                </div>
+
+                <h3 class="sub-section-title">Decision-Making Insights</h3>
+                <p class="mb-4">
+                    Key decisions were guided by a blend of data-driven analysis and a deep understanding of local context:
+                </p>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li class="list-item">
+                        <span class="font-semibold">Choosing Organic Waste Focus:</span> The high organic content of Accra's waste stream (65%) and the proven success of composting/BSF farming in other African contexts (e.g., Ethiopia, Kenya, Ashaiman) made this a strategic initial focus for high impact and resource recovery.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Decentralized Hub Model:</span> Addressing the limitations of current centralized collection systems and the need for community participation led to the decision for decentralized, community-managed hubs.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Prioritizing Job Creation:</span> Recognizing the socio-economic factors from the PESTLE analysis and Empathy Map, job creation (especially for women and youth) became a core benefit and selling point, aligning with community needs.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Phased Implementation:</span> Opting for a pilot phase first allows for validation, learning, and adaptation before scaling, mitigating risks associated with large-scale projects.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="py-16">
+        <div class="container">
+            <h2 class="section-title">Conclusion & Future Plans</h2>
+
+            <div class="card">
+                <h3 class="sub-section-title">Current Prototype Status</h3>
+                <p class="mb-4">
+                    Our current prototype is a validated conceptual model and low-fidelity plan for the Waste-to-Wealth initiative,
+                    specifically focusing on Organic Waste Valorization Hubs in Accra. We have clearly defined the problem,
+                    understood our key stakeholders and their needs, analyzed the contextual factors (PESTLE), and articulated a
+                    solution with its key features, benefits, and an initial implementation roadmap. The Lean Canvas provides a
+                    solid strategic framework for our venture.
+                </p>
+
+                <h3 class="sub-section-title">Future Plans & Next Steps</h3>
+                <ul class="list-disc ml-6 space-y-2">
+                    <li class="list-item">
+                        <span class="font-semibold">High-Fidelity Prototyping:</span> Develop a more detailed, interactive prototype (e.g., digital mockups of a hub management interface or a community engagement app) to further visualize the solution and gather more specific user feedback.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">User Testing & Iteration:</span> Conduct extensive user testing with target communities and stakeholders to gather feedback on the high-fidelity prototype, identify areas for improvement, and refine the solution based on their input.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Partnership Development:</span> Actively seek and formalize partnerships with local government bodies (AMA), NGOs, private waste management companies, and agricultural organizations to secure support, funding, and operational frameworks.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Funding & Resource Mobilization:</span> Develop a detailed budget and seek seed funding or grants from environmental organizations, impact investors, and government sustainability initiatives.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Pilot Project Launch:</span> Initiate a small-scale pilot project in a selected community in Accra to demonstrate the viability and impact of the Organic Waste Valorization Hubs, collecting empirical data on waste diversion, product output, and community participation.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Scalability & Expansion Strategy:</span> Based on pilot success, develop a comprehensive strategy for scaling the initiative across more communities in Accra and potentially other urban centers in Ghana and across Africa, leveraging the circular economy principles.
+                    </li>
+                    <li class="list-item">
+                        <span class="font-semibold">Continuous Measurement & Reporting:</span> Establish robust monitoring and evaluation frameworks to track key metrics (waste diverted, GHG emissions reduced, jobs created, revenue generated) and regularly report on impact to stakeholders and funders.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-800 text-white text-center p-6 mt-10 rounded-t-xl shadow-lg">
+        <div class="container">
+            <p>&copy; 2025 The Waste-to-Wealth Initiative. All rights reserved.</p>
+            <p class="text-sm mt-2">Built with passion for a sustainable Africa.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for LLM API calls
+
+        // Function to extract text content from an element by its ID
+        function getTextContent(elementId) {
+            const element = document.getElementById(elementId);
+            return element ? element.innerText.trim() : '';
+        }
+
+        // Function to extract text content from all list items within a UL by its ID
+        function getListItemsText(listId) {
+            const list = document.getElementById(listId);
+            if (!list) return '';
+
+            let text = '';
+            const items = list.getElementsByTagName('li');
+            for (let i = 0; i < items.length; i++) {
+                // Get the bold text and then the rest of the text in the list item
+                const boldText = items[i].querySelector('.font-semibold') ? items[i].querySelector('.font-semibold').innerText.trim() : '';
+                const restOfText = items[i].innerText.replace(boldText, '').trim();
+                text += `- ${boldText}: ${restOfText}\n`;
+            }
+            return text;
+        }
+
+        // Function to display a loading spinner
+        function showLoading(elementId) {
+            document.getElementById(elementId).classList.remove('hidden');
+            document.getElementById(elementId.replace('Loading', 'Text')).innerHTML = ''; // Clear previous text
+            document.getElementById(elementId.replace('Loading', 'Output')).classList.remove('hidden');
+        }
+
+        // Function to hide a loading spinner and display content
+        function hideLoading(elementId, content) {
+            document.getElementById(elementId).classList.add('hidden');
+            document.getElementById(elementId.replace('Loading', 'Text')).innerHTML = content.replace(/\n/g, '<br>'); // Display content with line breaks
+            document.getElementById(elementId.replace('Loading', 'Output')).classList.remove('hidden');
+        }
+
+        // Function to handle generating the pitch statement
+        async function generatePitchStatement() {
+            showLoading('pitchLoading');
+
+            const problemStatement = getTextContent('problemStatement');
+            const solutionStatement = getTextContent('solutionStatement');
+
+            const prompt = `Based on the following problem and solution, generate a concise and impactful pitch statement (around 2-3 sentences) for an entrepreneurial venture.
+            \n\nProblem: ${problemStatement}
+            \n\nSolution: ${solutionStatement}`;
+
+            try {
+                let chatHistory = [];
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Canvas will automatically provide the API key here
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    hideLoading('pitchLoading', text);
+                } else {
+                    hideLoading('pitchLoading', 'Error: Could not generate pitch statement.');
+                    console.error('Gemini API response structure unexpected:', result);
+                }
+            } catch (error) {
+                hideLoading('pitchLoading', 'Error: Failed to connect to the Gemini API.');
+                console.error('Error calling Gemini API:', error);
+            }
+        }
+
+        // Function to handle suggesting learning steps
+        async function suggestLearningSteps() {
+            showLoading('learningLoading');
+
+            const challenges = getListItemsText('challengesEncounteredList');
+            const lessons = getListItemsText('lessonsLearnedList');
+
+            const prompt = `Given the following challenges encountered and lessons learned during an entrepreneurial journey, suggest 3-5 specific, actionable next steps or areas for further learning/development to improve the venture or entrepreneurial skills. Focus on practical suggestions relevant to the insights provided.
+            \n\nChallenges Encountered:\n${challenges}
+            \n\nLessons Learned:\n${lessons}`;
+
+            try {
+                let chatHistory = [];
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Canvas will automatically provide the API key here
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    hideLoading('learningLoading', text);
+                } else {
+                    hideLoading('learningLoading', 'Error: Could not suggest learning steps.');
+                    console.error('Gemini API response structure unexpected:', result);
+                }
+            } catch (error) {
+                hideLoading('learningLoading', 'Error: Failed to connect to the Gemini API.');
+                console.error('Error calling Gemini API:', error);
+            }
+        }
+
+        // Add event listeners to the buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            const generatePitchBtn = document.getElementById('generatePitchBtn');
+            if (generatePitchBtn) {
+                generatePitchBtn.addEventListener('click', generatePitchStatement);
+            }
+
+            const suggestLearningBtn = document.getElementById('suggestLearningBtn');
+            if (suggestLearningBtn) {
+                suggestLearningBtn.addEventListener('click', suggestLearningSteps);
+            }
+        });
+    </script>
+</body>
+</html>
